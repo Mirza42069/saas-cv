@@ -10,12 +10,15 @@ import { polarClient } from "./lib/payments";
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: "pg",
-
     schema: schema,
   }),
   trustedOrigins: [env.CORS_ORIGIN],
-  emailAndPassword: {
-    enabled: true,
+  // Enable Google OAuth only
+  socialProviders: {
+    google: {
+      clientId: env.GOOGLE_CLIENT_ID,
+      clientSecret: env.GOOGLE_CLIENT_SECRET,
+    },
   },
   advanced: {
     defaultCookieAttributes: {
@@ -33,7 +36,7 @@ export const auth = betterAuth({
         checkout({
           products: [
             {
-              productId: "your-product-id",
+              productId: "polar_cl_3zmubZUeAqk4avhg1KldPpyqh1Q5p2Ny9hrqn3ihURx",
               slug: "pro",
             },
           ],

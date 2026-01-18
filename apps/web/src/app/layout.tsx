@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "my-stack-nyoba",
-  description: "my-stack-nyoba",
+  title: "CVMaker - Create Professional ATS-Friendly CVs in Minutes",
+  description: "Build ATS-optimized resumes with professional templates. Create, customize, and download your perfect CV in minutes. Land more interviews.",
 };
 
 export default function RootLayout({
