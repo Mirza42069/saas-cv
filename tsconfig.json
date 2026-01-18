@@ -1,0 +1,3 @@
+{
+  "extends": "@my-stack-nyoba/config/tsconfig.base.json"
+}

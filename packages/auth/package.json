@@ -1,0 +1,26 @@
+{
+  "name": "@my-stack-nyoba/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@my-stack-nyoba/db": "workspace:*",
+    "@my-stack-nyoba/env": "workspace:*",
+    "@polar-sh/better-auth": "catalog:",
+    "@polar-sh/sdk": "^0.42.2",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@my-stack-nyoba/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
